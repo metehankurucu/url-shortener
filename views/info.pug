@@ -1,0 +1,11 @@
+extends layout
+
+block content
+  h2.head-title.wow.fadeInUp= title
+  .header-button.wow.fadeInUp(data-wow-delay='0.3s')
+    .container
+      h5.text-primary= description
+      input.form-control(id='shortenUrl' readonly='' value=url type='text')
+      button.btn.btn-primary(id='copyBtn' onclick="copy()") Copy
+block scripts
+  script(src="assets/js/copy.js")

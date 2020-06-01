@@ -1,7 +1,68 @@
 doctype html
-html
+html(lang='en')
   head
-    title= title
-    link(rel='stylesheet', href='/stylesheets/style.css')
+    // Required meta tags
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+    title URL Shortener
+    // Bootstrap CSS
+    link(rel='stylesheet', href='assets/css/bootstrap.min.css')
+    // Icon
+    link(rel='stylesheet', href='assets/fonts/line-icons.css')
+    // Slicknav
+    link(rel='stylesheet', href='assets/css/slicknav.css')
+    // Owl carousel
+    link(rel='stylesheet', href='assets/css/owl.carousel.min.css')
+    link(rel='stylesheet', href='assets/css/owl.theme.css')
+    link(rel='stylesheet', href='assets/css/magnific-popup.css')
+    link(rel='stylesheet', href='assets/css/nivo-lightbox.css')
+    // Animate
+    link(rel='stylesheet', href='assets/css/animate.css')
+    // Main Style
+    link(rel='stylesheet', href='assets/css/main.css')
+    // Responsive Style
+    link(rel='stylesheet', href='assets/css/responsive.css')
   body
-    block content
+      // Hero Area Start
+      #hero-area.hero-area-bg
+        .container
+          br
+          a.navbar-brand(href='/')
+              h4.text-primary.title URL Shortener
+          .row
+            .col-md-12.col-sm-12
+              .contents.text-center
+                block content
+              .img-thumb.text-center.wow.fadeInUp(data-wow-delay='0.6s')
+                img.img-fluid(src='assets/img/hero-1.png', alt='')
+      .copyright
+        br
+        .container.text-center
+          | Design by
+          a(href='http://uideck.com', rel='nofollow') &nbsp UIdeck
+        br
+      // Copyright Section End
+      // Go to Top Link
+      a.back-to-top(href='#')
+        i.lni-arrow-up
+      // Preloader
+      #preloader
+        #loader-1.loader
+      // End Preloader
+      // jQuery first, then Popper.js, then Bootstrap JS
+      script(src='assets/js/jquery-min.js')
+      script(src='assets/js/popper.min.js')
+      script(src='assets/js/bootstrap.min.js')
+      script(src='assets/js/owl.carousel.min.js')
+      script(src='assets/js/jquery.mixitup.js')
+      script(src='assets/js/wow.js')
+      script(src='assets/js/jquery.nav.js')
+      script(src='assets/js/scrolling-nav.js')
+      script(src='assets/js/jquery.easing.min.js')
+      script(src='assets/js/jquery.counterup.min.js')
+      script(src='assets/js/nivo-lightbox.js')
+      script(src='assets/js/jquery.magnific-popup.min.js')
+      script(src='assets/js/waypoints.min.js')
+      script(src='assets/js/jquery.slicknav.js')
+      script(src='assets/js/main.js')
+      block scripts
