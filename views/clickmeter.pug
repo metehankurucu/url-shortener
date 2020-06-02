@@ -1,0 +1,13 @@
+extends layout
+
+block content
+  h2.head-title.wow.fadeInUp= title
+  h5.text-primary= description
+  br
+  .header-button.wow.fadeInUp(data-wow-delay='0.3s')
+    .container
+      form(method='post', action='/clickmeter')
+        .form-group
+          input#url.form-control(type='url', name='url', placeholder='Enter your URL', required='', data-error='Please enter a valid URL')
+        button.btn.btn-common(type='submit') Show number of clicks
+        
