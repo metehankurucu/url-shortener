@@ -14,7 +14,7 @@ router.get("/", (req, res, next) => {
   res.render("index", { title: "Simple URL Shortener" });
 });
 
-/* POST create new shorten url */
+/* POST create new short url */
 router.post("/url", async (req, res, next) => {
   try {
     const { url } = req.body;
@@ -30,16 +30,16 @@ router.post("/url", async (req, res, next) => {
 
       await URL.create(urlData);
 
-      const shorten = BASE_URL + key;
+      const short = BASE_URL + key;
 
       res.render("info", {
-        url: shorten,
-        title: "Your shorten URL is here",
+        url: short,
+        title: "Your short URL is here",
       });
     } else {
       res.render("index", {
         title: "Your URL is not valid",
-        description: "Please enter a valid URL for shorten",
+        description: "Please enter a valid URL to shorten",
       });
     }
   } catch (error) {
