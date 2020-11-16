@@ -2,8 +2,6 @@
 
 ### Basic URL Shortener using NodeJS and MongoDB
 
-[Demo](https://my-urlshortener.herokuapp.com/)
-
 | ![](public/images/image1.png) | ![](public/images/image2.png) |
 | :---------------------------: | :---------------------------- |
 
